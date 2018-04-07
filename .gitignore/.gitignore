@@ -1,0 +1,17 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <windows.h>
+int main () {
+	int h,m,s;
+	system ("pause");
+	for (h = h + 0; h <= 24; h++) {
+		m = 0;
+		for (m = m + 0; m <= 60; m++) {
+			s = 0;
+			for (s = s + 0; s <= 60; s++) {
+				printf("%02i:%02i:%02i \r",h,m,s);
+				Sleep (1000);
+			}
+		}
+	}
+}
